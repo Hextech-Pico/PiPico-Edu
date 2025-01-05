@@ -13,6 +13,9 @@
 int main() {
     stdio_init_all();                   // initialize the standard I/O library
     cyw43_arch_init();                  // initialize the CYW43439 module, wifi, bluetooth, onboard LED
+    adc_init();                         // initialize the ADC
+    //stdio_usb_init();                   // initialize the USB serial port
+    //not necessary, because stdio_init all already does this
     multicore_launch_core1(core1_code); // launch the core1_code function on the second core
 
     while (true) {

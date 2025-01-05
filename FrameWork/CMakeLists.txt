@@ -1,4 +1,3 @@
-
 # ====================================================================================
 
 # Generated Cmake Pico project file
@@ -21,8 +20,8 @@ endif()
 set(sdkVersion 2.1.0)
 
 # RISCV_RPI_2_0_0_5 or 13_3_Rel1 RISV cores or ARM cores
-set(toolchainVersion RISCV_RPI_2_0_0_5) 
-#set(toolchainVersion 13_3_Rel1)
+#set(toolchainVersion RISCV_RPI_2_0_0_5) 
+set(toolchainVersion 13_3_Rel1)
 
 set(picotoolVersion 2.1.0)
 set(picoVscode ${USERHOME}/.pico-sdk/cmake/pico-vscode.cmake)
