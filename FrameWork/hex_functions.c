@@ -1,6 +1,7 @@
 #include <stdio.h>
 #include <stdint.h>
 #include "hex_functions.h"
+#include "pico/bootrom.h" 
 #include "pico/stdlib.h"
 
 // Second core code: core1_code
@@ -23,11 +24,11 @@ void core1_code() {
         case REBOOT:
             printf("Rebooting...\n");
             sleep_ms(1000);
-            //reset_usb_boot(0, 0);
+            rom_reset_usb_boot(0, 0);
             break;
 
         default:
-            printf("Unknown command\n Value: %d\n", command_value);
+            printf("Unknown command\n Value: %d\n Value Hex: %x\n", command_value, command_value);
             break;
         }
     }

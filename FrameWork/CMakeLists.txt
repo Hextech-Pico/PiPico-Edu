@@ -43,7 +43,7 @@ pico_sdk_init()
 add_executable(main
 main.c hex_functions.c
         )
-target_link_libraries(main pico_stdlib hardware_adc pico_cyw43_arch_none pico_multicore)
+target_link_libraries(main pico_stdlib hardware_adc hardware_gpio pico_cyw43_arch_none pico_multicore pico_bootrom)
 
 # enable usb output, disable uart output
 pico_enable_stdio_usb(main 1)

@@ -10,8 +10,16 @@
 
 // Define COMMANDS
 #define TEMP 0x54454D50
-#define REBOOT 0x5245424F
+#define REBOOT 90457418714964
 #define NOCOMM 0x00000000
+#define UPTIME 9101002754575685 //need implementation
+#define SLEEP 357761893712 //need implementation
+#define WIFIID 0x574946494449 //need implementation
+#define WIFIPW 0x574946495057 //need implementation
+#define BTID 0x4254494449 //need implementation
+#define BTPW 0x42545057 //need implementation
+
+
 
 // Wrapper function for the second core. This will handle the USB input.
 void core1_code();
