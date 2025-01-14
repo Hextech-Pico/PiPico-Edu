@@ -18,6 +18,7 @@
 #define WIFIPW 0x574946495057 //need implementation
 #define BTID 0x4254494449 //need implementation
 #define BTPW 0x42545057 //need implementation
+#define TELEM 0x54454C454D //need implementation
 
 
 
@@ -27,6 +28,12 @@ void core1_code();
 // Reading a char from the USB input and storing in a buffer.
 // It returns the number according to the characters read.
 uint64_t get_command(uint8_t *command);
+
+// Reading the onboard temperature sensor from examples
+float read_onboard_temperature();
+// Reading ADC values
+void read_adc_values(uint16_t *adc_values);
+
 
 // Command selection required.
 
